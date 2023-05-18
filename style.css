@@ -29,8 +29,19 @@ body {
 .container {
     margin-top: 7rem;
     padding: 30px 40px;
-    width: 40%;
-    min-width: 500px;
+    
+}
+
+body > div.container.col-xs-12.col-md-8.col-lg-6.col-xl-6 > div.new-task-container.row.mx-1 > button {
+    background-color: #7BDFF2;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    
+}
+
+body > div.container.col-xs-12.col-md-8.col-lg-6.col-xl-6 > div.new-task-container.row.mx-1 > button:hover {
+    background-color: #F6AE2D;
 }
 
 .new-task-container {
@@ -58,12 +69,12 @@ body {
 .new-task-button {
     flex: 1;
     border-radius: 5px;
+    font-size: 10vw;
     font-weight: 500;
-    height: 100%;
     border: none;
     background-color: #7BDFF2;
     color: #fff;
-    padding: 12px;
+    padding: 1rem;
     text-transform: uppercase;
     margin-left: 12px;
     cursor: pointer;
@@ -76,7 +87,7 @@ body {
     margin-top: 60px;
     border-radius: 5px;
     box-shadow: 0 15px 30px #04040471;
-    width: 100%;
+    
 }
 
 .task-item {
@@ -100,7 +111,7 @@ body {
 }
 
 footer {
-    position: fixed;
+    
     bottom: 0;
     width: 100%;
 }
