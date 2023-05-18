@@ -1,0 +1,128 @@
+:root {
+    --cor-primaria: #7BDFF2;
+    --cor-secundaria: #485696;
+    --cor-destaque: #F6AE2D;
+    --cor-destaque-2: #BA1200;
+    --cor-texto: #040404;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: rgb(72, 86, 150);
+    background: linear-gradient(0deg, rgba(72, 86, 150, 1) 3%, rgba(123, 223, 242, 1) 79%);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 7rem;
+    padding: 30px 40px;
+    width: 40%;
+    min-width: 500px;
+}
+
+.new-task-container {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px #04040471;
+    display: flex;
+}
+
+.new-task-container input {
+    flex: 3;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: 500;
+}
+
+.new-task-container input:focus {
+    outline: none;
+    border-color: #7BDFF2;
+}
+
+.new-task-button {
+    flex: 1;
+    border-radius: 5px;
+    font-weight: 500;
+    height: 100%;
+    border: none;
+    background-color: #7BDFF2;
+    color: #fff;
+    padding: 12px;
+    text-transform: uppercase;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+
+.tasks-container {
+    background-color: #fff;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px #04040471;
+    width: 100%;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.task-item i {
+    background-color: #7BDFF2;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+.task-item i:hover {
+    cursor: pointer;
+    background-color: #F6AE2D;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Utilities */
+
+.error {
+    border: 1px solid #BA1200 !important;
+
+}
+
+.error::placeholder {
+    color: #BA1200;
+}
+
+.completed {
+    text-decoration: line-through;
+    font-style: italic;
+    color: darkgrey;
+}
+
+body > div.container > div.tasks-container > div > p:hover {
+    cursor: pointer;
+    font-size: large;
+}
