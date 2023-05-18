@@ -87,6 +87,7 @@ body > div.container.col-xs-12.col-md-8.col-lg-6.col-xl-6 > div.new-task-contain
     margin-top: 60px;
     border-radius: 5px;
     box-shadow: 0 15px 30px #04040471;
+    min-height: 40vh;
     
 }
 
@@ -111,7 +112,7 @@ body > div.container.col-xs-12.col-md-8.col-lg-6.col-xl-6 > div.new-task-contain
 }
 
 footer {
-    
+    margin-top: 1vh;
     bottom: 0;
     width: 100%;
 }
